@@ -5,6 +5,24 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity.colorscheme.catppuccin", enabled = true },
+  {
+    "catppuccin",
+    opts = {
+      integrations = {
+        cmp = true,
+        gitsigns = true,
+        telescope = true,
+        treesitter = true,
+        lsp_trouble = true,
+        lsp_saga = true,
+        lsp_signature = true,
+        lspsaga = true,
+        barbar = true,
+        bufferline = true,
+        rainbow_delimiters = true,
+      },
+    },
+  },
   { import = "astrocommunity.completion.copilot-lua" },
   {
     "copilot.lua",
